@@ -26,8 +26,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8
         pip install -r requirements.txt
-        python manage.py test
+        pip uninstall pycrypto -y
+        pip install pycryptodome==3.18.0
+        
         
     - name: Run Tests
       run: |
         flake8 edc_offstudy
+        python manage.py test
