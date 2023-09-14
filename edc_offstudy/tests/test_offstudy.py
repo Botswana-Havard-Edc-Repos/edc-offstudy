@@ -90,8 +90,7 @@ class TestOffstudy(TestCase):
             OffstudyError,
             Offstudy,
             subject_identifier=subject_identifier,
-            offstudy_datetime=self.consent_datetime -
-            relativedelta(days=1),
+            offstudy_datetime=self.consent_datetime - relativedelta(days=1),
             consent_model='edc_offstudy.subjectconsent',
             label_lower='edc_offstudy.subjectoffstudy')
 
@@ -100,8 +99,7 @@ class TestOffstudy(TestCase):
         with self.assertRaises(OffstudyError) as cm:
             Offstudy(
                 subject_identifier=subject_identifier,
-                offstudy_datetime=self.consent_datetime -
-                relativedelta(days=1),
+                offstudy_datetime=self.consent_datetime - relativedelta(days=1),
                 consent_model='edc_offstudy.subjectconsent',
                 label_lower='edc_offstudy.subjectoffstudy')
         self.assertEqual(
@@ -115,8 +113,7 @@ class TestOffstudy(TestCase):
         with self.assertRaises(OffstudyError) as cm:
             Offstudy(
                 subject_identifier=subject_identifier,
-                offstudy_datetime=self.consent_datetime -
-                relativedelta(days=1),
+                offstudy_datetime=self.consent_datetime - relativedelta(days=1),
                 consent_model='edc_offstudy.subjectconsent',
                 label_lower='edc_offstudy.subjectoffstudy')
         self.assertEqual(
@@ -131,8 +128,7 @@ class TestOffstudy(TestCase):
         with self.assertRaises(OffstudyError) as cm:
             Offstudy(
                 subject_identifier=subject_identifier,
-                offstudy_datetime=self.consent_datetime -
-                relativedelta(days=1),
+                offstudy_datetime=self.consent_datetime - relativedelta(days=1),
                 consent_model='edc_offstudy.subjectconsent',
                 label_lower='edc_offstudy.subjectoffstudy')
         self.assertEqual(
