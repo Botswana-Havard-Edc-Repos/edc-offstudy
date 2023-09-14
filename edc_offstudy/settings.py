@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'simple_history',
     'django_crypto_fields.apps.AppConfig',
     'edc_base.apps.AppConfig',
