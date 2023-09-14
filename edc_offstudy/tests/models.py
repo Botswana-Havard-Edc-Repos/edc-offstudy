@@ -1,6 +1,5 @@
 from django.db import models
 from django.db.models.deletion import PROTECT
-from edc_appointment.model_mixins import CreateAppointmentsMixin
 from edc_appointment.models import Appointment
 from edc_base.model_mixins import BaseUuidModel
 from edc_base.utils import get_utcnow
@@ -69,7 +68,7 @@ class BadNonCrfOne(NonUniqueSubjectIdentifierFieldMixin, OffstudyNonCrfModelMixi
         pass
 
 
-class Enrollment(EnrollmentModelMixin, CreateAppointmentsMixin, BaseUuidModel):
+class Enrollment(EnrollmentModelMixin, BaseUuidModel):
 
     subject_identifier = models.CharField(max_length=50)
 
@@ -79,7 +78,7 @@ class Enrollment(EnrollmentModelMixin, CreateAppointmentsMixin, BaseUuidModel):
         visit_schedule_name = 'visit_schedule.schedule'
 
 
-class Enrollment2(EnrollmentModelMixin, CreateAppointmentsMixin, BaseUuidModel):
+class Enrollment2(EnrollmentModelMixin, BaseUuidModel):
 
     subject_identifier = models.CharField(max_length=50)
 
