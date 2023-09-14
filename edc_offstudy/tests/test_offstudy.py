@@ -284,8 +284,7 @@ class TestOffstudy(TestCase):
         # report off study day after first visit for our subject
         SubjectOffstudy.objects.create(
             subject_identifier=self.subject_consent.subject_identifier,
-            offstudy_datetime=appointments[0].appt_datetime +
-            relativedelta(days=1),
+            offstudy_datetime=appointments[0].appt_datetime + relativedelta(days=1),
             offstudy_reason=DEAD)
         # assert other appointments for other subjects are not deleted
         self.assertEquals(
@@ -415,8 +414,7 @@ class TestOffstudy(TestCase):
             report_datetime=appointment.appt_datetime,
             study_status=SCHEDULED)
         SubjectOffstudy.objects.create(
-            offstudy_datetime=appointment.appt_datetime +
-            relativedelta(hours=1),
+            offstudy_datetime=appointment.appt_datetime + relativedelta(hours=1),
             subject_identifier=self.subject_identifier)
         crf_one = CrfOne(
             report_datetime=appointment.appt_datetime,
@@ -591,8 +589,7 @@ class TestOffstudy(TestCase):
             report_datetime=appointment.appt_datetime,
             study_status=SCHEDULED)
         SubjectOffstudy.objects.create(
-            offstudy_datetime=appointment.appt_datetime +
-            relativedelta(hours=1),
+            offstudy_datetime=appointment.appt_datetime + relativedelta(hours=1),
             subject_identifier=self.subject_identifier)
         crf_one = CrfOne(
             report_datetime=appointment.appt_datetime,
@@ -640,8 +637,7 @@ class TestOffstudy(TestCase):
                 'visit_schedule', 'visit_schedule', 'visit_schedule', 'visit_schedule2'])
         # show adding off study 2 removes visit 4000 only
         SubjectOffstudy2.objects.create(
-            offstudy_datetime=appointment.appt_datetime +
-            relativedelta(hours=1),
+            offstudy_datetime=appointment.appt_datetime + relativedelta(hours=1),
             subject_identifier=self.subject_identifier)
         appointments = [appt.visit_code for appt in Appointment.objects.filter(
             subject_identifier=self.subject_identifier).order_by('appt_datetime')]
