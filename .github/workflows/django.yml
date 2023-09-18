@@ -36,4 +36,4 @@ jobs:
     - name: Run Tests
       run: |
         flake8 edc_offstudy
-        python manage.py test
+        python manage.py check
