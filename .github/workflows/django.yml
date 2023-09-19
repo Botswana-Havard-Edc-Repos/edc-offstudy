@@ -30,7 +30,7 @@ jobs:
         pip install flake8
         pip install -r requirements.txt
         pip uninstall pycrypto -y
-        pip install pycryptodome==3.18.0
+        pip install pycryptodome
         
         
     - name: Run Tests
