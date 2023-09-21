@@ -1,7 +1,7 @@
 git+https://github.com/botswana-harvard/edc-base@develop#egg=edc_base
 git+https://github.com/botswana-harvard/django-crypto-fields.git@f975c27f7ea69ca274976a3868c34f2d8983d550
 git+https://github.com/botswana-harvard/django-revision.git@413b56162a0e73689d94c452b34b859add4e5a08
-git+https://github.com/botswana-harvard/edc-visit-schedule@0.2.5#egg=edc_visit_schedule
+git+https://github.com/botswana-harvard/edc-visit-schedule@develop#egg=edc_visit_schedule
 git+https://github.com/botswana-harvard/edc-meta-data@develop#egg=edc_metadata
 git+https://github.com/botswana-harvard/edc-visit-tracking@develop#egg=edc_visit_tracking
 git+https://github.com/botswana-harvard/edc-constants@develop#egg=edc_constants
@@ -15,7 +15,7 @@ git+https://github.com/botswana-harvard/edc-protocol@develop#edc_protocol
 git+https://github.com/botswana-harvard/edc-lab@develop#edc_lab
 git+https://github.com/botswana-harvard/edc-model-admin.git@18da70d85b1bf921fa50f48d432bb4b8ab2523b4
 git+https://github.com/botswana-harvard/edc-offstudy@develop#edc_offstudy
-git+https://github.com/botswana-harvard/edc-appointment@0.2.10#edc_appointment
+git+https://github.com/botswana-harvard/edc-appointment@develop#edc_appointment
 git+https://github.com/botswana-harvard/edc-reference@develop#edc_reference
 git+https://github.com/erikvw/django-simple-history.git@master#egg=django_simple_history
 git+https://github.com/botswana-harvard/edc-timepoint.git@develop#egg=edc_timepoint
