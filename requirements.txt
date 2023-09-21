@@ -20,6 +20,7 @@ git+https://github.com/botswana-harvard/edc-reference@develop#edc_reference
 git+https://github.com/erikvw/django-simple-history.git@master#egg=django_simple_history
 git+https://github.com/botswana-harvard/edc-timepoint.git@develop#egg=edc_timepoint
 git+https://github.com/botswana-harvard/edc-consent.git@develop#egg=edc_consent
+git+https://github.com/botswana-harvard/edc-form-validators.git@17e6eaf4cbef1b80ec76721f905a9d76a66d9fe9
 git+https://github.com/botswana-harvard/edc-facility.git@a7d04e94d8b58f5d4af6007b7d44199f147d1b70
 git+https://github.com/botswana-harvard/edc-label.git@adabbc6948d489ed2a9fcd4ba78c21e18d81d6a2
 git+https://github.com/botswana-harvard/edc-search.git@5ec22f14b3db2b8fcf328b94c3a0ca8845a8a78c
