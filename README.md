@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/botswana-harvard/edc-offstudy.svg?branch=develop)](https://travis-ci.org/botswana-harvard/edc-offstudy)
 [![Coverage Status](https://coveralls.io/repos/botswana-harvard/edc-offstudy/badge.svg)](https://coveralls.io/r/botswana-harvard/edc-offstudy)
+[![Coverage Status](https://coveralls.io/repos/github/Botswana-Havard-Edc-Repos/edc-offstudy/badge.svg?branch=develop)](https://coveralls.io/github/Botswana-Havard-Edc-Repos/edc-offstudy?branch=develop)
 
 # edc-offstudy
 
