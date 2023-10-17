@@ -25,6 +25,8 @@ SITE_ID = 40
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'w^k+nty=&d-)qvc^mn_eo&c7-*^v7-e)f_kk&gbrpiv-d)6x(4'
 
+KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = []
